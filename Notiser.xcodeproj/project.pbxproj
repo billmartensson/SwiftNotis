@@ -11,15 +11,22 @@
 		AB475AFA256F9B320024FE0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB475AF9256F9B320024FE0F /* ContentView.swift */; };
 		AB475AFC256F9B330024FE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB475AFB256F9B330024FE0F /* Assets.xcassets */; };
 		AB475AFF256F9B330024FE0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB475AFE256F9B330024FE0F /* Preview Assets.xcassets */; };
+		AB475B0B256FB3440024FE0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB475B0A256FB3440024FE0F /* GoogleService-Info.plist */; };
+		D7FB7ACDC07360405AEFA87D /* Pods_Notiser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3508B4D484476852144607E8 /* Pods_Notiser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EDACEFB2A8F5C8475AA9312 /* Pods-Notiser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notiser.debug.xcconfig"; path = "Target Support Files/Pods-Notiser/Pods-Notiser.debug.xcconfig"; sourceTree = "<group>"; };
+		3508B4D484476852144607E8 /* Pods_Notiser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notiser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AF9720B74603849300B66B8 /* Pods-Notiser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notiser.release.xcconfig"; path = "Target Support Files/Pods-Notiser/Pods-Notiser.release.xcconfig"; sourceTree = "<group>"; };
 		AB475AF4256F9B320024FE0F /* Notiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notiser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB475AF7256F9B320024FE0F /* NotiserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiserApp.swift; sourceTree = "<group>"; };
 		AB475AF9256F9B320024FE0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB475AFB256F9B330024FE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB475AFE256F9B330024FE0F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB475B00256F9B330024FE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB475B07256FB1F00024FE0F /* Notiser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notiser.entitlements; sourceTree = "<group>"; };
+		AB475B0A256FB3440024FE0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +34,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FB7ACDC07360405AEFA87D /* Pods_Notiser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A15676669820472D3F5C294 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EDACEFB2A8F5C8475AA9312 /* Pods-Notiser.debug.xcconfig */,
+				7AF9720B74603849300B66B8 /* Pods-Notiser.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		97269884388A1C45DC22A7C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3508B4D484476852144607E8 /* Pods_Notiser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB475AEB256F9B320024FE0F = {
 			isa = PBXGroup;
 			children = (
 				AB475AF6256F9B320024FE0F /* Notiser */,
 				AB475AF5256F9B320024FE0F /* Products */,
+				4A15676669820472D3F5C294 /* Pods */,
+				97269884388A1C45DC22A7C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +80,8 @@
 		AB475AF6256F9B320024FE0F /* Notiser */ = {
 			isa = PBXGroup;
 			children = (
+				AB475B0A256FB3440024FE0F /* GoogleService-Info.plist */,
+				AB475B07256FB1F00024FE0F /* Notiser.entitlements */,
 				AB475AF7256F9B320024FE0F /* NotiserApp.swift */,
 				AB475AF9256F9B320024FE0F /* ContentView.swift */,
 				AB475AFB256F9B330024FE0F /* Assets.xcassets */,
@@ -76,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB475B03256F9B330024FE0F /* Build configuration list for PBXNativeTarget "Notiser" */;
 			buildPhases = (
+				4347AD64DCDC06350C2792D0 /* [CP] Check Pods Manifest.lock */,
 				AB475AF0256F9B320024FE0F /* Sources */,
 				AB475AF1256F9B320024FE0F /* Frameworks */,
 				AB475AF2256F9B320024FE0F /* Resources */,
+				A75743034D539AA5B3B3E0F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +160,53 @@
 			files = (
 				AB475AFF256F9B330024FE0F /* Preview Assets.xcassets in Resources */,
 				AB475AFC256F9B330024FE0F /* Assets.xcassets in Resources */,
+				AB475B0B256FB3440024FE0F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4347AD64DCDC06350C2792D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notiser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A75743034D539AA5B3B3E0F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notiser/Pods-Notiser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notiser/Pods-Notiser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notiser/Pods-Notiser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB475AF0256F9B320024FE0F /* Sources */ = {
@@ -264,11 +339,14 @@
 		};
 		AB475B04256F9B330024FE0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDACEFB2A8F5C8475AA9312 /* Pods-Notiser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notiser/Notiser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Notiser/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SGQZ32758;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Notiser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -285,11 +363,14 @@
 		};
 		AB475B05256F9B330024FE0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF9720B74603849300B66B8 /* Pods-Notiser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Notiser/Notiser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Notiser/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SGQZ32758;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Notiser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
